@@ -1,0 +1,4 @@
+E-mail:
+  Получатель:
+    description: получатель почты (можно через запятую)
+    default_value: info@stroygarant.moscow

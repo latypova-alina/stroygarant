@@ -1,0 +1,142 @@
+<navbar></navbar>
+
+<ul class="anchor-btn">
+    <li ng-repeat="section in sections.keys"
+        ng-class="{'selected': currentSection == section}"
+        ng-click="scrollTo(section)"></li>
+</ul>
+
+<div class="section partner-top main" id="section-about">
+    <slick autoplay="true" arrows="false" speed="1500" fade="true" autoplay-speed="6000" pause-on-hover="false" dots="true">
+        <div class="main-slide-1">
+            <div class="pixel-net"></div>
+            <div class="section-content">
+                <h1>
+                    Застройщикам — <br> специальные условия
+                </h1>
+
+                <div class="angle-bottom-right">
+                    Снижаем затраты без потери качества строительства за счет использования инновационного сырья и новых технологий производства материалов.
+                </div>
+            </div>
+            <a class="more" ng-click="scrollTo('advantages')">Узнать больше</a>
+        </div>
+        <div class="main-slide-2">
+            <div class="pixel-net"></div>
+            <div class="section-content">
+                <h1>
+                    Строителям — <br> снижение затрат
+                </h1>
+
+                <div class="angle-bottom-right">
+                    Предлагаем комплексные решения для оптимизации затрат на поставку строительных материалов.
+                </div>
+            </div>
+            <a class="more" ng-click="scrollTo('advantages')">Узнать больше</a>
+        </div>
+        <div class="main-slide-3">
+            <div class="pixel-net"></div>
+            <div class="section-content">
+                <h1>
+                    Частному сектору — <br> очевидные выгоды
+                </h1>
+
+                <div class="angle-bottom-right">
+                    Комплексные поставки  материалов частным застройщицам позволяют снизить затраты на строительство.
+                </div>
+            </div>
+            <a class="more" ng-click="scrollTo('advantages')">Узнать больше</a>
+        </div>
+    </slick>
+</div>
+
+<div class="section advantage" id="section-advantages">
+    <div class="container height">
+        <div class="clearfix margin-top-20">
+            <h1>
+                Наши преимущества
+            </h1>
+
+            <div class="angle-top-right">
+                Шесть неоспоримых аргументов
+                в пользу нашей уникальности
+            </div>
+        </div>
+
+        <div class="advantage-list" role="tablist" aria-multiselectable="true" data-start-collapsed="true" bs-collapse>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="al-item safety">
+                        <h5 bs-collapse-toggle role="tab">
+                            надежность
+                        </h5>
+
+                        <div class="al-info panel-collapse" role="tabpanel" bs-collapse-target>
+                            <p>Многолетний опыт работы с ведущими девелоперами и производителями позволяет с 2011 года успешно
+                                 реализовывать строительные проекты и быть надежным партнером для наших клиентов. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="al-item resource">
+                        <h5 bs-collapse-toggle role="tab">Собственные <br> логистические <br> ресурсы</h5>
+
+                        <div class="al-info panel-collapse" role="tabpanel" bs-collapse-target>
+                            <p>Оптимизированная логистика позволяет существенно снизить конечную стоимость материалов и обеспечить
+                                своевременные поставки точно в срок.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="al-item relationship">
+                        <h5 bs-collapse-toggle role="tab">Долгосрочные <br> отношения <br> с поставщиками</h5>
+
+                        <div class="al-info panel-collapse" role="tabpanel" bs-collapse-target>
+                            <p>Оперативно и в полном объеме удовлетворяем потребности клиентов, благодаря дилерским и дистрибьюторским соглашениям
+                                с ведущими производителями.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="al-item flow">
+                        <h5 bs-collapse-toggle role="tab">Автоматизированный <br> документооборот</h5>
+
+                        <div class="al-info panel-collapse" role="tabpanel" bs-collapse-target>
+                            <p>
+                                Профессионализм бухгалтеров, практичный опыт юристов и  автоматизация документооборота обеспечивают своевременную подготовку необходимых документов.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="al-item discipline">
+                        <h5 bs-collapse-toggle role="tab">финансовая <br> дисциплина</h5>
+
+                        <div class="al-info panel-collapse" role="tabpanel" bs-collapse-target>
+                            <p>Гарантировать стабильность поставок позволяет высокий уровень доверия и своевременные взаиморасчеты с контрагентами. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="al-item team">
+                        <h5 bs-collapse-toggle role="tab">профессиональная <br> команда</h5>
+
+                        <div class="al-info panel-collapse" role="tabpanel" bs-collapse-target>
+                            <p>Руководящий состав нашей компании обладает успешным опытом работы в крупнейших девелоперских и строительных компаниях.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<calc id="section-calc"></calc>
+
+<projects id="section-projects"></projects>
+
+<contacts></contacts>
+

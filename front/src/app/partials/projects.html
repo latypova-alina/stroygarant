@@ -1,0 +1,40 @@
+<div class="section map hidden-sm">
+    <h1 class="our-objects">
+        Наши <br> объекты
+    </h1>
+
+    <div class="overlay-info" ng-class="{'show': currentProject.id}">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 close-wrap">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h2 ng-click="hideProject()">
+                                {{currentProject.name}}
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="close" ng-click="hideProject()"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="angle-top-left">
+                        <img ng-src="{{currentImage.big_url}}" alt=""/>
+                    </div>
+                    <div class="oi-img clearfix">
+                        <div ng-repeat="image in currentProject.images" ng-click="$parent.currentImage = image">
+                            <img ng-src="{{image.small_url}}"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    {{currentProject.description}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="map-wrap" id="partners-map"></div>
+</div>
+

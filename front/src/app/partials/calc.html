@@ -1,0 +1,128 @@
+<div class="section calc">
+    <div class="container flex">
+        <div class="angle-top-left">
+            <h1>Колоссальный выбор материалов</h1>
+            <p>
+                Для того, чтобы сэкономить ваше время и помочь в выборе материалов,
+                соответствующих вашим нуждам, мы предлагаем вам использовать онлайн-
+                калькулятор.
+            </p>
+        </div>
+        <h5 class="text-center">шаг {{stepNum}}. {{stepDesc}}</h5>
+
+        <div class="material-choice row" ng-if="stepType == 'categories'">
+
+            <div class="col-md-3" ng-repeat="category in categories" ng-click="setCategory(category)">
+                <div class="mc-item">
+                    {{category.name}}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="material-choice row" ng-if="stepType == 'params' && currentParam.name != 'Цвет'">
+
+            <div class="col-md-3" ng-repeat="value in paramValues" ng-click="setParamValue(value)">
+                <div class="mc-item">
+                    {{value.name}}
+                </div>
+            </div>
+
+        </div>
+
+        <div ng-if="stepType == 'params' && currentParam.name == 'Цвет'">
+
+            <div class="color-choice">
+                <div class="color-item" ng-repeat="value in paramValues" ng-click="setParamValue(value)">
+                    <span ng-style="{background: value.color}"></span>
+                    {{value.name}}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="material-choice row" ng-if="stepType == 'products'">
+
+            <div class="slick-wall">
+                <slick infinite="true" slides-to-show="3" slides-to-scroll="1" init-onload=true data="products">
+                    <div class="sw-item" ng-repeat="product in products">
+                        <a ng-click="setProduct(product)">
+                            <img ng-src="{{product.image}}" alt=""/>
+                        </a>
+                        <div class="wall-info">
+                            <p>{{product.name}}</p>
+                            <p>{{product.price}} р.</p>
+                        </div>
+                    </div>
+                </slick>
+            </div>
+
+        </div>
+
+        <div class="qnt-wrap" ng-if="stepType == 'quantity'">
+
+            <div class="qnt-title">
+                <div ng-show="currentProduct.units == 'pieces'">Количество:</div>
+                <div ng-show="currentProduct.units == 'square_meters'">Площадь:</div>
+                <div ng-show="currentProduct.units == 'cubic_meters'">Объем:</div>
+            </div>
+
+            <div class="qnt-prod">
+                <div class="qnt-prod-item">
+                    <span ng-click="quantityDown()">-</span>
+                    <span class="qnt" ng-click="toggleQntInput()" ng-hide="showQntInput">
+                        {{quantity}}
+                    </span>
+                    <input type="number" ng-show="showQntInput" ng-model="quantity" class="qnt"
+                           ng-blur="showQntInput = false" class="qnt">
+                    <span ng-click="quantityUp()">+</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div ng-if="stepType == 'quantity'">
+            <a class="more v2" ng-click="setQuantity()">Далее</a>
+        </div>
+
+        <div ng-show="stepType == 'delivery'" style="flex-direction: column;">
+
+            <p class="text-center">
+                Укажите приблизительное расстояние до объекта доставки <br>(В км, доставка из Москвы)
+            </p>
+
+            <div class="delivery-slider">
+                <input id="ex14" type="text" />
+            </div>
+
+            <div class="delivery text-center">
+                <input type="checkbox" id="deliveryCheck"/>
+                <label for="deliveryCheck" class="pickup">Спасибо, я вывезу сам</label>
+            </div>
+
+            <a class="more v2" ng-click="setDelivery()">Далее</a>
+
+        </div>
+
+        <div ng-if="stepType == 'sum'" style="flex-direction: column;">
+            <p class="text-center">
+                Спасибо, вы ответили на все пункты!<br>
+                Примерная стоимость вашего заказа составит
+            </p>
+
+            <div class="total-sum text-center">
+                <div>{{totalSum}} руб.</div>
+            </div>
+
+            <p class="text-center total-link">
+                <a ng-click="getProducts()">Вернуться к выбору производителя</a>
+                <span>или</span>
+                <a ng-click="init()">Начать заново</a>
+            </p>
+
+            <a class="more v2" call-request>Далее</a>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,33 @@
+<%= semantic_form_for([:admin, @category, @product]) do |f| %>
+    
+    <%= f.inputs 'Основные данные' do %>
+        <%= f.input :name %>
+        <%= f.input :vendor %>
+        <%= f.input :price %>
+        <%= f.input :units, as: :select, collection: Product.available_units %>
+        <%= f.input :image, hint: f.template.image_tag(f.object.image.url) %>
+    <% end %>
+
+    <%= f.inputs 'Параметры' do %>
+        <ol>
+            <% @category.param_types.each do |type| %>
+                <li>
+                    <label><%= type.name %></label> 
+                    <select name="params[<%= type.id %>]">
+                        <option value="0">Выберете</option>
+                        <% type.param_values.each do |value| %>
+                            <option value="<%= value.id %>" 
+                                    <%= @product.product_params.where(param_type_id: type.id).where(param_value_id: value.id).exists? ? "selected" : "" %>>
+                                <%= value.name %>
+                            </option>
+                        <% end %>
+                    </select>
+                </li>
+            <% end %>  
+        </ol>
+    <% end %>
+    
+    <%= f.actions %>
+
+<% end %>
+

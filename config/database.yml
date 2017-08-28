@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: stroygarant_development
+
+production:
+  <<: *default
+  host: localhost
+  username: deploy
+  password: StroyKa123
+  database: stroygarant_production

@@ -1,0 +1,17 @@
+<div class="popup-request-call">
+    <div class="rc-content">
+        <form ng-submit="sendRequest()">
+            <p>
+                Оставьте свой номер телефона и наш специалист перезвонит Вам
+            </p>
+
+            <input type="text" ng-model="$parent.name" required="required" />
+            <input type="text" ng-model="$parent.phone" ng-value="+7"
+                   required="required" mask="+7 (999) 999 99 99" mask-restrict='reject' />
+
+            <button class="rc-btn" ng-disabled="busy">
+                Заказать звонок
+            </button>
+        </form>
+    </div>
+</div>

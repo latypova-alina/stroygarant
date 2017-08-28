@@ -1,0 +1,87 @@
+ru:
+  activerecord:
+    models:
+      admin_user:
+        one: Администратор
+        few: Администратора
+        many: Администраторов
+        other: Администраторы
+      project: 
+        one: Объект
+        few: Объекта
+        many: Объектов
+        other: Объекты
+      project_image:
+        one: Изображение
+        few: Изображения
+        many: Изображений
+        other: Изображения
+      calc_item:
+        one: Пункт
+        few: Пункта
+        many: Пунктов
+        other: Пункты
+      category:
+        one: Категория
+        few: Категории
+        many: Категорий
+        other: Категории
+      product:
+        one: Товар
+        few: Товара
+        many: Товаров
+        other: Товары
+      vendor:
+        one: Производитель
+        few: Производителя
+        many: Производителей
+        other: Производители
+      param_type:
+        one: Параметр
+        few: Параметра
+        many: Параметров
+        other: Параметры
+      param_value:
+        one: Значение
+        few: Значения
+        many: Значений
+        other: Значения
+      call_request:
+        one: Заказ звонка
+        few: Заказа звонка
+        many: Заказов звонка
+        other: Заказы звонков
+    attributes:
+      project:
+        name: Название
+        address: Адрес
+        description: Описание
+        latitude: Широта
+        longitude: Долгота
+      category:
+        name: Название
+      vendor:
+        name: Название
+      product:
+        name: Название
+        units: Единицы измерения
+        price: Цена
+        vendor: Производитель
+        image: Картинка
+        category: Категория
+      param_type:
+        category: Категория
+        category_id: Категория
+        name: Название
+      param_value:
+        param_type: Параметр
+        param_type_id: Параметр
+        name: Название
+      admin_user:
+        email: E-mail
+        password: Пароль
+        password_confirmation: Подтверждение пароля
+      call_request:
+        name: Имя
+        phone: Телефон
+        created_at: Дата
