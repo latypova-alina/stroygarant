@@ -1,0 +1,3514 @@
+/* line 1, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_box {
+  position: relative;
+  border: 1px solid #ddd;
+  overflow: visible;
+}
+
+/* line 6, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_box, .redactor_box textarea {
+  background-color: #fff;
+}
+
+/* line 10, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_air {
+  position: absolute;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  z-index: 2;
+}
+
+/*
+  Fullscreen
+*/
+/* line 20, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_box_fullscreen {
+  left: 0;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+}
+
+/* line 29, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_box textarea {
+  font-family: Menlo, Monaco, monospace, sans-serif;
+  font-size: 13px;
+  overflow: auto;
+  resize: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+  z-index: 1004;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+/* line 45, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_editor, .redactor_editor:focus {
+  position: relative;
+  outline: none;
+  box-shadow: none !important;
+  margin: 0 !important;
+  background: none;
+  background: #fff !important;
+  overflow: auto;
+  white-space: normal;
+}
+
+/* line 59, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_editor.redactor_editor_wym {
+  background: #f6f6f6 !important;
+  padding: 5px 15px !important;
+}
+
+/* line 63, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_editor_wym div,
+.redactor_editor_wym p,
+.redactor_editor_wym ul,
+.redactor_editor_wym ol,
+.redactor_editor_wym table,
+.redactor_editor_wym dl,
+.redactor_editor_wym pre,
+.redactor_editor_wym h1,
+.redactor_editor_wym h2,
+.redactor_editor_wym h3,
+.redactor_editor_wym h4,
+.redactor_editor_wym h5,
+.redactor_editor_wym blockquote {
+  background-color: #fff !important;
+  border: 1px solid #e4e4e4 !important;
+  padding: 10px !important;
+  margin: 10px 0 !important;
+}
+
+/* line 81, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_editor_wym ul,
+.redactor_editor_wym ol {
+  padding-left: 2em !important;
+}
+
+/*
+  TOOLBAR
+*/
+/* line 90, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_toolbar {
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
+  position: relative;
+  left: 0;
+  top: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  padding-left: 2px !important;
+  line-height: 0 !important;
+  list-style: none !important;
+  font-size: 0;
+  background: #f1f1f1;
+  background: -moz-linear-gradient(top, #f1f1f1 0%, #e2e2e2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1f1f1), color-stop(100%, #e2e2e2));
+  background: -webkit-linear-gradient(top, #f1f1f1 0%, #e2e2e2 100%);
+  background: -o-linear-gradient(top, #f1f1f1 0%, #e2e2e2 100%);
+  background: -ms-linear-gradient(top, #f1f1f1 0%, #e2e2e2 100%);
+  background: linear-gradient(to bottom, #f1f1f1 0%, #e2e2e2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#e2e2e2',GradientType=0 );
+  overflow: hidden !important;
+  height: 32px !important;
+  border-bottom: 1px solid #bbb;
+}
+
+/* line 113, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_air .redactor_toolbar {
+  padding-right: 2px !important;
+}
+
+/* line 116, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_toolbar li {
+  float: left !important;
+  margin: 0 !important;
+  padding: 3px 1px;
+  padding-right: 0;
+  list-style: none !important;
+  outline: none;
+}
+
+/* line 124, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_toolbar li.redactor_separator {
+  float: left;
+  height: 34px;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #f1f1f1;
+  padding: 0;
+  margin: 0 2px 0 3px !important;
+}
+
+/* line 132, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_toolbar li a {
+  width: 25px;
+  height: 25px;
+  border: 1px solid transparent;
+  * border: 1px solid #eee;
+  display: block;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  zoom: 1;
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 145, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_toolbar li.redactor_btn_right {
+  float: none;
+  float: right !important;
+}
+
+/* line 149, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_toolbar li a {
+  display: block;
+  text-indent: -9999px;
+  background-image: url(data:image/png;base64,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);
+  background-repeat: no-repeat;
+  background-position: 0;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  /* line 158, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+  .redactor_toolbar li a {
+    background-image: url(data:image/png;base64,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);
+    background-size: auto 25px;
+  }
+}
+/* line 165, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_toolbar li a:hover {
+  border-color: #98a6ba;
+  background-color: #dde4ef;
+  outline: none;
+}
+
+/* line 170, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_toolbar li a:active, .redactor_toolbar li a.redactor_act {
+  border-color: #b5b5b5;
+  background-color: #ddd;
+  outline: none;
+}
+
+/*
+  BUTTONS
+  step 25px
+*/
+/* line 181, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_html {
+  background-position: 0px;
+}
+
+/* line 182, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_formatting {
+  background-position: -25px;
+}
+
+/* line 183, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_bold {
+  background-position: -50px;
+}
+
+/* line 184, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_italic {
+  background-position: -75px;
+}
+
+/* line 185, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_deleted {
+  background-position: -500px;
+}
+
+/* line 186, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_unorderedlist {
+  background-position: -100px;
+}
+
+/* line 187, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_orderedlist {
+  background-position: -125px;
+}
+
+/* line 188, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_outdent {
+  background-position: -150px;
+}
+
+/* line 189, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_indent {
+  background-position: -175px;
+}
+
+/* line 190, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_image {
+  background-position: -200px;
+}
+
+/* line 191, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_video {
+  background-position: -225px;
+}
+
+/* line 192, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_file {
+  background-position: -250px;
+}
+
+/* line 193, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_table {
+  background-position: -275px;
+}
+
+/* line 194, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_link {
+  background-position: -300px;
+}
+
+/* line 195, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_fontcolor {
+  background-position: -325px;
+}
+
+/* line 196, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_backcolor {
+  background-position: -350px;
+}
+
+/* line 197, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_alignleft {
+  background-position: -375px;
+}
+
+/* line 198, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_aligncenter {
+  background-position: -400px;
+}
+
+/* line 199, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_alignright {
+  background-position: -425px;
+}
+
+/* line 200, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_justify {
+  background-position: -450px;
+}
+
+/* line 201, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_horizontalrule {
+  background-position: -475px;
+}
+
+/* line 202, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_underline {
+  background-position: -525px;
+}
+
+/* line 204, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_fullscreen {
+  background-position: -550px;
+}
+
+/* line 205, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_normalscreen {
+  background-position: -575px;
+}
+
+/* line 206, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_clips {
+  background-position: -600px;
+}
+
+/* line 208, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+body .redactor_toolbar li a.redactor_btn_alignment {
+  background-position: -625px;
+}
+
+/*
+  Toolbar classes
+*/
+/* line 213, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_format_blockquote {
+  font-style: italic;
+  color: #666 !important;
+  padding-left: 10px;
+}
+
+/* line 218, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_format_pre {
+  font-family: monospace, sans-serif;
+}
+
+/* line 221, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_format_h1, .redactor_format_h2, .redactor_format_h3, .redactor_format_h4 {
+  font-weight: bold;
+}
+
+/* line 224, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_format_h1 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+/* line 228, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_format_h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+/* line 232, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_format_h3 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* line 236, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_format_h4 {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/*
+  DROPDOWN
+*/
+/* line 244, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_dropdown {
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  top: 28px;
+  left: 0;
+  z-index: 2004;
+  position: absolute;
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  -webkit-box-shadow: 0 2px 4px #ccc;
+  -moz-box-shadow: 0 2px 4px #ccc;
+  box-shadow: 0 2px 4px #ccc;
+  line-height: 21px;
+  padding: 10px;
+}
+
+/* line 260, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_separator_drop {
+  border-top: 1px solid #ddd;
+  padding: 0 !important;
+  line-height: 0;
+  font-size: 0;
+}
+
+/* line 266, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_dropdown a {
+  display: block;
+  color: #000;
+  padding: 3px 5px;
+  text-decoration: none;
+}
+
+/* line 272, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_dropdown a:hover {
+  color: #444 !important;
+  text-decoration: none;
+  background-color: #dde4ef;
+}
+
+/* ColorPicker */
+/* line 279, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_color_link {
+  padding: 0 !important;
+  width: 15px !important;
+  height: 15px !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset !important;
+  border-radius: 4px !important;
+  float: left !important;
+  border: 2px solid #fff !important;
+  font-size: 0;
+}
+
+/* line 289, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_color_none {
+  font-size: 11px;
+}
+
+/* MODAL */
+/* line 296, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+#redactor_modal_overlay {
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50000;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  opacity: 0.50;
+  background-color: #333 !important;
+}
+
+/* line 312, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+#redactor_modal {
+  background: #f7f7f7;
+  background: -moz-linear-gradient(top, #f7f7f7 0%, #e2e2e2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #e2e2e2));
+  background: -webkit-linear-gradient(top, #f7f7f7 0%, #e2e2e2 100%);
+  background: -o-linear-gradient(top, #f7f7f7 0%, #e2e2e2 100%);
+  background: -ms-linear-gradient(top, #f7f7f7 0%, #e2e2e2 100%);
+  background: linear-gradient(to bottom, #f7f7f7 0%, #e2e2e2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#e2e2e2',GradientType=0 );
+  text-shadow: 0 1px 0 #fff;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0px 5px 60px #000;
+  border-radius: 3px;
+  z-index: 50001;
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 12px !important;
+  color: #000;
+}
+
+/* line 333, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+#redactor_modal_header {
+  padding: 11px 30px 0 15px;
+  font-size: 12px;
+  border-radius: 3px 3px 0 0;
+  font-weight: bold;
+}
+
+/* line 339, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+#redactor_modal_content {
+  padding: 20px 30px;
+}
+
+/* line 343, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+#redactor_modal_close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  color: #777;
+  cursor: pointer;
+}
+
+/* line 353, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+#redactor_modal_close:hover {
+  color: #000;
+}
+
+/* line 356, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+#redactor_modal label {
+  margin: 10px 0 3px 0 !important;
+  padding: 0 !important;
+  float: none !important;
+  display: block !important;
+}
+
+/* line 362, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+#redactor_modal textarea {
+  margin-top: 4px;
+  display: block;
+}
+
+/* line 366, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_input {
+  width: 99%;
+  font-size: 14px;
+}
+
+/* line 370, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_modal_box {
+  height: 350px;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
+/* line 375, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+#redactor_image_box {
+  height: 270px;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
+/* line 380, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+#redactor_image_box_select {
+  display: block;
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+/* line 385, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+#redactor_image_box img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  max-width: 100px;
+}
+
+/* line 391, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+#redactor_tabs {
+  margin-bottom: 18px;
+}
+
+/* line 394, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+#redactor_tabs a {
+  display: inline-block;
+  border: 1px solid #d2d2d2;
+  padding: 4px 14px;
+  font-size: 12px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+  line-height: 1;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+/* line 406, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+#redactor_tabs a:hover, #redactor_tabs a.redactor_tabs_act {
+  background-color: #ddd;
+  padding: 5px 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4) inset;
+  border: none;
+  text-shadow: 0 1px 0 #eee;
+  color: #777 !important;
+  text-decoration: none !important;
+}
+
+/* line 415, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+#redactor_modal_footer {
+  padding: 9px 30px 20px 30px;
+  border-radius: 0 0 3px 3px;
+  text-align: right;
+}
+
+/* line 421, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+#redactor_modal input[type="radio"],
+#redactor_modal input[type="checkbox"] {
+  position: relative;
+  top: -1px;
+}
+
+/* line 426, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+#redactor_modal input[type="text"],
+#redactor_modal input[type="password"],
+#redactor_modal input[type="email"],
+#redactor_modal textarea {
+  position: relative;
+  z-index: 2;
+  font-family: Helvetica, Arial, Tahoma, sans-serif;
+  height: 23px;
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 1px 2px;
+  background-color: white;
+  color: #333;
+  font-size: 13px;
+  line-height: 1;
+  border-radius: 1px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+  -webkit-transition: border 0.3s ease-in;
+  -moz-transition: border 0.3s ease-in;
+  -ms-transition: border 0.3s ease-in;
+  -o-transition: border 0.3s ease-in;
+  transition: border 0.3s ease-in;
+}
+
+/* line 449, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+#redactor_modal textarea {
+  line-height: 1.4em;
+}
+
+/* line 452, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+#redactor_modal input:focus,
+#redactor_modal textarea:focus {
+  outline: none;
+  border-color: #5ca9e4;
+  box-shadow: 0 0 0 2px rgba(70, 161, 231, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+
+/* line 459, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_modal_btn {
+  margin-left: 8px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  line-height: 1;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 6px 16px 5px 16px;
+  border-radius: 4px;
+  background-color: #f3f3f3;
+  background-image: -moz-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image: -ms-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e1e1e1));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image: -o-linear-gradient(top, #ffffff, #e1e1e1);
+  background-image: linear-gradient(top, #ffffff, #e1e1e1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e1e1e1', GradientType=0);
+  border: 1px solid #ccc;
+  border-bottom-color: #aaa;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 0px #ffffff;
+  color: #000;
+}
+
+/* line 487, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_modal_btn:hover {
+  color: #555;
+}
+
+/* line 490, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_modal_btn:hover {
+  filter: none;
+  background: none;
+  background: #f3f3f3;
+  text-shadow: 0 1px 0px rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+/* Drag and Drop Area */
+/* line 500, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_droparea {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+/* line 506, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_droparea .redactor_dropareabox {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  width: 99%;
+  background-color: #fff;
+  padding: 60px 0;
+  border: 2px dashed #bbb;
+}
+
+/* line 515, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_droparea .redactor_dropareabox, .redactor_dropalternative {
+  color: #555;
+  font-size: 12px;
+}
+
+/* line 519, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_dropalternative {
+  margin: 4px 0 2px 0;
+}
+
+/* line 522, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_dropareabox.hover {
+  background: #efe3b8;
+  border-color: #aaa;
+}
+
+/* line 526, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_dropareabox.error {
+  background: #f7e5e5;
+  border-color: #dcc3c3;
+}
+
+/* line 530, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/redactor.css.scss */
+.redactor_dropareabox.drop {
+  background: #f4f4ee;
+  border-color: #e0e5d6;
+}
+/* line 5, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+#settings tr th:first-child {
+  width: 30%;
+}
+/* line 6, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+#settings tr th:last-child {
+  width: 15%;
+}
+/* line 8, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+#settings .update_link {
+  display: none;
+}
+/* line 9, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+#settings .saved-state {
+  display: none;
+}
+/* line 12, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+#settings .option-type-html .update_link {
+  display: inline;
+}
+/* line 16, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+#settings tr td .form .label {
+  display: none;
+}
+/* line 18, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+#settings tr td .form .file .label {
+  display: inline;
+}
+/* line 20, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+#settings tr td .form .inputs {
+  margin-bottom: 0;
+}
+/* line 22, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+#settings tr td .form input[type="text"], #settings tr td .form textarea {
+  width: 90%;
+}
+/* line 23, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+#settings tr td .form textarea {
+  height: 100px;
+}
+/* line 26, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+#settings tr td .form.html fieldset {
+  padding: 0;
+  background: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 34, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+#settings tr td .form.html fieldset li.input.text {
+  padding: 0px;
+}
+/* line 38, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+#settings tr td .form.html fieldset textarea {
+  height: 280px;
+}
+
+/* line 45, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+#admins tr th:last-child {
+  width: 15%;
+}
+/* line 47, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+#admins .form {
+  display: none;
+}
+/* line 48, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+#admins .form_actions {
+  display: none;
+}
+
+/* line 51, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+#settings_tabs ul.tabs {
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+/* line 56, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+.flashes {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  z-index: 10;
+}
+
+/* line 63, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+body.logged_in .flash.flash_notice {
+  border-bottom: 0px !important;
+  border-top: 1px solid #ADCBAF;
+}
+
+/* line 64, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+body.logged_in .flash {
+  top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+/* line 67, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-settings-9eeeacdb20fb/vendor/assets/stylesheets/activeadmin_settings.css.scss */
+.admin_settings .breadcrumb {
+  display: none;
+}
+/* Active Admin CSS */
+/* line 37, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 47, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_reset.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 49, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 51, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_reset.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 53, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_reset.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 55, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_reset.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 126, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_reset.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 57, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_reset.scss */
+a img {
+  border: none;
+}
+
+/* line 27, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+html {
+  font-size: 100.01%;
+}
+
+/* line 28, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+body {
+  font-size: 75%;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+/* line 31, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: #5E6469;
+}
+/* line 34, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
+  margin: 0;
+}
+
+/* line 37, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+
+/* line 38, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+
+/* line 39, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+
+/* line 40, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+h4 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+
+/* line 41, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+
+/* line 42, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* line 45, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+p {
+  margin: 0 0 1.5em;
+}
+/* line 48, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+p .left {
+  margin: 1.5em 1.5em 1.5em 0;
+  padding: 0;
+}
+/* line 49, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+p .right {
+  margin: 1.5em 0 1.5em 1.5em;
+  padding: 0;
+}
+
+/* line 52, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+.left {
+  float: left !important;
+}
+
+/* line 53, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+.right {
+  float: right !important;
+}
+
+/* line 55, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+blockquote {
+  margin: 1.5em;
+  color: #666;
+  font-style: italic;
+}
+
+/* line 56, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+strong, dfn {
+  font-weight: bold;
+}
+
+/* line 57, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+em, dfn {
+  font-style: italic;
+}
+
+/* line 58, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+sup, sub {
+  line-height: 0;
+}
+
+/* line 60, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+}
+
+/* line 62, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+address {
+  margin: 0 0 1.5em;
+  font-style: italic;
+}
+
+/* line 63, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+del {
+  color: #666;
+}
+
+/* line 65, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+pre {
+  margin: 1.5em 0;
+  white-space: pre;
+}
+
+/* line 66, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+pre, code, tt {
+  font: 1em 'andale mono', 'lucida console', monospace;
+  line-height: 1.5;
+}
+
+/* line 69, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+li ul,
+li ol {
+  margin: 0;
+}
+
+/* line 71, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+ul, ol {
+  margin: 0 1.5em 1.5em 0;
+  padding-left: 1.5em;
+}
+
+/* line 73, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+ul {
+  list-style-type: disc;
+}
+
+/* line 74, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 76, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+dl {
+  margin: 0 0 1.5em 0;
+}
+
+/* line 77, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+dl dt {
+  font-weight: bold;
+}
+
+/* line 78, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+dd {
+  margin-left: 1.5em;
+}
+
+/* line 81, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+table {
+  margin-bottom: 1.4em;
+  width: 100%;
+}
+
+/* line 82, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+th {
+  font-weight: bold;
+}
+
+/* line 83, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+thead th {
+  background: #c3d9ff;
+}
+
+/* line 84, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+th, td, caption {
+  padding: 4px 10px 4px 5px;
+}
+
+/* line 87, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+.small {
+  font-size: .8em;
+  margin-bottom: 1.875em;
+  line-height: 1.875em;
+}
+
+/* line 88, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+.large {
+  font-size: 1.2em;
+  line-height: 2.5em;
+  margin-bottom: 1.25em;
+}
+
+/* line 89, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+.hide {
+  display: none;
+}
+
+/* line 91, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+.quiet {
+  color: #666;
+}
+
+/* line 92, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+.loud {
+  color: #000;
+}
+
+/* line 93, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+.highlight {
+  background: #ff0;
+}
+
+/* line 94, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+.added {
+  background: #060;
+  color: #fff;
+}
+
+/* line 95, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+.removed {
+  background: #900;
+  color: #fff;
+}
+
+/* line 97, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+.first {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* line 98, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+.last {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+/* line 99, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+.top {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* line 100, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_typography.scss */
+.bottom {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* line 4, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header {
+  background-color: #6a7176;
+  background-image: linear-gradient(180deg, #6a7176, #4d5256);
+  border-bottom: 1px solid #44484b;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+  text-shadow: #000 0 1px 0;
+  display: table;
+  height: 20px;
+  width: 100%;
+  overflow: visible;
+  position: inherit;
+  padding: 5px 0;
+  z-index: 900;
+}
+/* line 16, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header h1 {
+  display: table-cell;
+  vertical-align: middle;
+  white-space: nowrap;
+  color: #cdcdcd;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  padding: 3px 30px 0 30px;
+  font-size: 1.3em;
+  font-weight: normal;
+  line-height: 1.2;
+}
+/* line 28, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header h1 a {
+  text-decoration: none;
+}
+/* line 31, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header h1 a:hover {
+  color: #fff;
+}
+/* line 36, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header h1 img {
+  position: relative;
+  top: -2px;
+}
+/* line 42, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header a, #header a:link {
+  color: #cdcdcd;
+}
+/* line 44, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header .header-item {
+  top: 2px;
+  position: relative;
+  height: 20px;
+}
+/* line 50, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* line 57, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li {
+  display: inline-block;
+  margin-right: 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.0em;
+  position: relative;
+  /* Hover on li, display the ul */
+  /* Drop down menus */
+}
+/* line 65, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li a {
+  text-decoration: none;
+  padding: 6px 10px 4px 10px;
+  position: relative;
+  border-radius: 10px;
+}
+/* line 72, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li.current > a {
+  background: #7b8389;
+  color: #fff;
+}
+/* line 77, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li.has_nested > a {
+  background: url(/rails_assets/active_admin/nested_menu_arrow-15084d93c65c1964d7077700ea748bd2d70cfa2d4c19707c58a9c64e232dd442.gif) no-repeat calc(100% - 7px) 50%;
+  padding-right: 20px;
+}
+/* line 82, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li.has_nested.current > a {
+  background: #7b8389 url(/rails_assets/active_admin/nested_menu_arrow_dark-7c43b8e0a5f8823875f49a093c9d7a6b374f885b6f9cc248ae9cd7e6e9b29034.gif) no-repeat calc(100% - 7px) 50%;
+  padding-right: 20px;
+}
+/* line 87, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li:hover > a {
+  background: #7b8389;
+  color: #fff;
+}
+/* line 92, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li.has_nested:hover > a {
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom: 5px solid #7b8389;
+  background: #7b8389 url(/rails_assets/active_admin/nested_menu_arrow_dark-7c43b8e0a5f8823875f49a093c9d7a6b374f885b6f9cc248ae9cd7e6e9b29034.gif) no-repeat calc(100% - 7px) 50%;
+  z-index: 1020;
+}
+/* line 101, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li:hover ul {
+  display: block;
+}
+/* line 103, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li ul {
+  background: #7b8389;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0 1px 3px #444;
+  position: absolute;
+  width: 120%;
+  min-width: 175px;
+  max-width: calc(100% + 20px);
+  margin-top: 5px;
+  float: left;
+  display: none;
+  padding: 3px 0px 5px 0;
+  list-style: none;
+  z-index: 1010;
+}
+/* line 118, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li ul li {
+  margin: 0px;
+}
+/* line 120, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li ul li a {
+  background: none;
+  display: block;
+}
+/* line 123, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li ul li a:hover {
+  color: #fff;
+  background: none;
+}
+/* line 127, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header ul.tabs > li ul li.current a {
+  border-radius: 0;
+}
+/* line 135, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header #tabs {
+  width: 100%;
+}
+/* line 139, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header #utility_nav {
+  color: #aaa;
+  display: table-cell;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  padding-right: 26px;
+  text-align: right;
+}
+/* line 148, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header #utility_nav a {
+  text-decoration: none;
+}
+/* line 149, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header #utility_nav a:hover {
+  color: #fff;
+}
+/* line 151, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_header.scss */
+#header #utility_nav li {
+  display: inline;
+}
+
+/* line 3, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form {
+  /* Reset margins & Padding */
+  /* Nested Fieldsets and Legends */
+  /* Text Fields */
+  /* semantic_errors */
+  /* Buttons */
+}
+/* line 5, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form ul, form ol, form li, form fieldset, form legend, form input, form textarea, form select, form p {
+  margin: 0;
+  padding: 0;
+}
+/* line 6, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form ol, form ul {
+  list-style: none;
+}
+/* line 8, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset {
+  border: 0;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+/* line 13, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset.inputs {
+  background: #f4f4f4;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 4px #ddd;
+}
+/* line 15, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset legend {
+  width: 100%;
+}
+/* line 17, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset legend span {
+  display: block;
+  background-color: #efefef;
+  background-image: linear-gradient(180deg, #efefef, #dfe1e2);
+  text-shadow: #fff 0 1px 0;
+  border: solid 1px #cdcdcd;
+  border-color: #d4d4d4;
+  border-top-color: #e6e6e6;
+  border-right-color: #d4d4d4;
+  border-bottom-color: #cdcdcd;
+  border-left-color: #d4d4d4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px #FFF inset;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 0.5em;
+  color: #5E6469;
+  padding: 5px 10px 3px 10px;
+}
+/* line 20, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset ol > li {
+  padding: 10px;
+}
+/* line 22, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset ol > li label {
+  display: block;
+  width: 20%;
+  float: left;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: #5E6469;
+}
+/* line 29, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset ol > li label abbr {
+  border: none;
+  color: #aaa;
+}
+/* line 36, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset ol > li.has_many_container {
+  padding: 20px 10px;
+}
+/* line 38, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset ol > li.has_many_container h3 {
+  font-size: 12px;
+  font-weight: bold;
+}
+/* line 42, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset ol > li.has_many_container .has_many_fields {
+  margin: 10px 0;
+}
+/* line 45, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset ol > li > li label {
+  line-height: 100%;
+  padding-top: 0;
+}
+/* line 48, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset ol > li > li label input {
+  line-height: 100%;
+  vertical-align: middle;
+  margin-top: -0.1em;
+}
+/* line 57, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form .has_many_fields {
+  position: relative;
+}
+/* line 60, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form .has_many_container .handle {
+  position: absolute;
+  top: calc(50% - 3em / 2);
+  right: 2px;
+  padding: 0;
+  cursor: move;
+}
+/* line 69, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form .has_many_container.ui-sortable .has_many_container {
+  margin-right: 2em;
+}
+/* line 76, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form .ui-sortable input[type=text], form .ui-sortable input[type=password], form .ui-sortable input[type=email], form .ui-sortable input[type=number], form .ui-sortable input[type=url], form .ui-sortable input[type=tel], form .ui-sortable textarea {
+  width: calc(80% - 22px - 2em - 1px);
+}
+/* line 84, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li fieldset {
+  position: relative;
+  padding: 0;
+  margin-bottom: 0;
+}
+/* line 89, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li fieldset legend {
+  position: absolute;
+  width: 95%;
+  padding-top: 0.1em;
+  left: 0px;
+  font-size: 100%;
+  font-weight: normal;
+}
+/* line 96, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li fieldset legend span {
+  position: absolute;
+}
+/* line 97, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li fieldset legend.label label {
+  position: absolute;
+}
+/* line 100, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li fieldset:not(.has_many_fields) ol {
+  float: left;
+  width: 74%;
+  margin: 0;
+  padding: 0 0 0 20%;
+}
+/* line 106, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li fieldset:not(.has_many_fields) ol li {
+  padding: 0;
+  border: 0;
+}
+/* line 112, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li fieldset.has_many_fields ol {
+  float: left;
+  width: 100%;
+  margin: 0;
+}
+/* line 121, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form input[type=text],
+form input[type=password],
+form input[type=email],
+form input[type=number],
+form input[type=url],
+form input[type=tel],
+form input[type=date],
+form textarea {
+  width: calc(80% - 22px);
+  border: 1px solid #c9d0d6;
+  border-radius: 3px;
+  font-size: 0.95em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  outline: none;
+  padding: 8px 10px 7px;
+}
+/* line 137, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form input[type=text]:focus,
+form input[type=password]:focus,
+form input[type=email]:focus,
+form input[type=number]:focus,
+form input[type=url]:focus,
+form input[type=tel]:focus,
+form input[type=date]:focus,
+form textarea:focus {
+  border: 1px solid #99a2aa;
+  box-shadow: 0 0 4px #99a2aa;
+}
+/* line 143, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form input[type=date] {
+  width: calc(100% - 22px);
+}
+/* line 147, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li {
+  /* Hints */
+  /* Date and Time Fields */
+  /* Check Boxes or Radio fields */
+  /* Boolean Field */
+  /* Hidden fields */
+  /* Errors */
+}
+/* line 150, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li p.inline-hints {
+  font-size: 0.95em;
+  font-style: italic;
+  color: #666;
+  margin: 0.5em 0 0 20%;
+}
+/* line 159, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.date_select fieldset ol li, form fieldset > ol > li.time_select fieldset ol li, form fieldset > ol > li.datetime_select fieldset ol li {
+  float: left;
+  width: auto;
+  margin: 0 0.5em 0 0;
+}
+/* line 161, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.date_select fieldset ol li label, form fieldset > ol > li.time_select fieldset ol li label, form fieldset > ol > li.datetime_select fieldset ol li label {
+  display: none;
+}
+/* line 162, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.date_select fieldset ol li input, form fieldset > ol > li.time_select fieldset ol li input, form fieldset > ol > li.datetime_select fieldset ol li input {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+/* line 168, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.check_boxes fieldset ol, form fieldset > ol > li.radio fieldset ol {
+  margin-bottom: -0.6em;
+}
+/* line 170, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.check_boxes fieldset ol li, form fieldset > ol > li.radio fieldset ol li {
+  margin: 0.1em 0 0.5em 0;
+}
+/* line 172, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.check_boxes fieldset ol li label, form fieldset > ol > li.radio fieldset ol li label {
+  float: none;
+  width: 100%;
+}
+/* line 175, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.check_boxes fieldset ol li label input, form fieldset > ol > li.radio fieldset ol li label input {
+  margin-right: 0.2em;
+}
+/* line 182, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.boolean {
+  height: 1.1em;
+}
+/* line 184, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.boolean label {
+  width: 80%;
+  padding-left: 20%;
+  padding-right: 10px;
+  text-transform: none !important;
+  font-weight: normal;
+}
+/* line 190, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.boolean label input {
+  margin: 0 0.5em 0 0.2em;
+}
+/* line 195, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.hidden {
+  padding: 0;
+}
+/* line 200, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li p.inline-errors {
+  color: #932419;
+  font-weight: bold;
+  margin: 0.3em 0 0 20%;
+}
+/* line 205, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li ul.errors {
+  color: #932419;
+  margin: 0.5em 0 0 20%;
+  list-style: square;
+}
+/* line 209, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li ul.errors li {
+  padding: 0;
+  border: none;
+  display: list-item;
+}
+/* line 213, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset > ol > li.error input[type=text], form fieldset > ol > li.error input[type=password], form fieldset > ol > li.error input[type=email], form fieldset > ol > li.error input[type=number], form fieldset > ol > li.error input[type=url], form fieldset > ol > li.error input[type=tel], form fieldset > ol > li.error textarea {
+  border: 1px solid #932419;
+}
+/* line 220, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form ul.errors {
+  background: #fae6e4;
+  border-radius: 4px;
+  color: #932419;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 10px;
+  list-style: square;
+}
+/* line 228, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form ul.errors li {
+  margin-left: 15px;
+  padding: 0;
+  border: none;
+  display: list-item;
+}
+/* line 233, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form input[type=submit], form input[type=button], form button {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #838a90;
+  background-image: linear-gradient(180deg, #838a90, #414549);
+  text-shadow: #000 0 1px 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0px rgba(255, 255, 255, 0.2) inset;
+  border: solid 1px #484e53;
+  border-color: #484e53;
+  border-top-color: #616a71;
+  border-right-color: #484e53;
+  border-bottom-color: #363b3f;
+  border-left-color: #484e53;
+  color: #efefef;
+  cursor: pointer;
+}
+/* line 12, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+form input[type=submit].disabled, form input[type=button].disabled, form button.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 29, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+form input[type=submit]:not(.disabled):hover, form input[type=button]:not(.disabled):hover, form button:not(.disabled):hover {
+  background-color: #8b9297;
+  background-image: linear-gradient(180deg, #8b9297, #484d51);
+}
+/* line 33, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+form input[type=submit]:not(.disabled):active, form input[type=button]:not(.disabled):active, form button:not(.disabled):active {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset, 0 1px 0 0px #FFF;
+  background-color: #71797f;
+  background-image: linear-gradient(180deg, #71797f, #35383b);
+}
+/* line 239, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form .buttons, form .actions {
+  margin-top: 15px;
+}
+/* line 241, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form .buttons input[type=submit], form .buttons input[type=button], form .buttons button, form .actions input[type=submit], form .actions input[type=button], form .actions button {
+  margin-right: 10px;
+}
+/* line 244, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset.buttons li, form fieldset.actions li {
+  float: left;
+  padding: 0;
+}
+/* line 248, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form fieldset.buttons li.cancel a, form fieldset.actions li.cancel a {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E7E7E7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+  border: solid 1px #c7c7c7;
+  border-color: #c7c7c7;
+  border-top-color: #d3d3d3;
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c2c2c2;
+  border-left-color: #c7c7c7;
+  text-shadow: #fff 0 1px 0;
+  color: #5E6469;
+}
+/* line 12, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+form fieldset.buttons li.cancel a.disabled, form fieldset.actions li.cancel a.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 50, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+form fieldset.buttons li.cancel a:not(.disabled):hover, form fieldset.actions li.cancel a:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F1F1F1);
+}
+/* line 54, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+form fieldset.buttons li.cancel a:not(.disabled):active, form fieldset.actions li.cancel a:not(.disabled):active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #EEE;
+  border-color: #b9b9b9;
+  border-top-color: #c2c2c2;
+  border-right-color: #b9b9b9;
+  border-bottom-color: #b7b7b7;
+  border-left-color: #b9b9b9;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(180deg, #F3F3F3, #D8D8D8);
+}
+
+/* line 258, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+.sidebar_section label {
+  display: block;
+  text-transform: uppercase;
+  color: #5E6469;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+/* line 266, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+.sidebar_section select {
+  width: 240px;
+}
+/* line 270, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+.sidebar_section input[type=text], .sidebar_section input[type=password], .sidebar_section input[type=email], .sidebar_section input[type=url], .sidebar_section input[type=tel], .sidebar_section textarea {
+  width: 220px;
+}
+
+/* line 288, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form .filter_form_field {
+  margin-bottom: 10px;
+  clear: both;
+}
+/* line 293, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form .filter_form_field.select_and_search input[type=text] {
+  margin-left: 16px;
+  width: 88px;
+}
+/* line 297, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form .filter_form_field.select_and_search select {
+  width: 108px;
+}
+/* line 303, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form .filter_form_field.filter_check_boxes label {
+  margin-bottom: 3px;
+}
+/* line 304, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form .filter_form_field.filter_check_boxes fieldset {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+/* line 308, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form .filter_form_field.filter_check_boxes .check_boxes_wrapper label {
+  font-weight: normal;
+  margin-bottom: 3px;
+  text-transform: none;
+  font-size: 1.0em;
+}
+/* line 313, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form .filter_form_field.filter_check_boxes .check_boxes_wrapper label input {
+  vertical-align: baseline;
+}
+/* line 318, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form .filter_form_field.filter_date_range .seperator {
+  display: inline-block;
+  text-align: center;
+  width: 12px;
+}
+/* line 324, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form .filter_form_field.filter_date_range input[type=text] {
+  background: #fff url(/rails_assets/active_admin/datepicker/datepicker-input-icon-d9c2bb73769af777c8a71720d29741f3a499aebd5a043e9a119bd0d9597aed47.png) no-repeat 100% 7px;
+  padding-right: 27px;
+  width: 71px;
+}
+/* line 331, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_forms.scss */
+form.filter_form a.clear_filters_btn {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E7E7E7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+  border: solid 1px #c7c7c7;
+  border-color: #c7c7c7;
+  border-top-color: #d3d3d3;
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c2c2c2;
+  border-left-color: #c7c7c7;
+  text-shadow: #fff 0 1px 0;
+  color: #5E6469;
+}
+/* line 12, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+form.filter_form a.clear_filters_btn.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 50, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+form.filter_form a.clear_filters_btn:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F1F1F1);
+}
+/* line 54, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+form.filter_form a.clear_filters_btn:not(.disabled):active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #EEE;
+  border-color: #b9b9b9;
+  border-top-color: #c2c2c2;
+  border-right-color: #b9b9b9;
+  border-bottom-color: #b7b7b7;
+  border-left-color: #b9b9b9;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(180deg, #F3F3F3, #D8D8D8);
+}
+
+/* line 4, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_comments.scss */
+.comments .active_admin_comment {
+  clear: both;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  max-width: 700px;
+}
+/* line 10, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_comments.scss */
+.comments .active_admin_comment .active_admin_comment_meta {
+  width: 130px;
+  float: left;
+  overflow: hidden;
+  font-size: 0.9em;
+  color: #767e84;
+}
+/* line 16, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_comments.scss */
+.comments .active_admin_comment .active_admin_comment_meta .active_admin_comment_author {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+  color: #5E6469;
+}
+/* line 23, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_comments.scss */
+.comments .active_admin_comment .active_admin_comment_body {
+  margin-left: 150px;
+}
+/* line 27, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_comments.scss */
+.comments form.active_admin_comment {
+  margin: 0;
+  padding: 0;
+  margin-left: 150px;
+}
+/* line 32, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_comments.scss */
+.comments form.active_admin_comment fieldset.inputs {
+  margin: 0;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+}
+/* line 38, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_comments.scss */
+.comments form.active_admin_comment li {
+  padding: 0;
+}
+/* line 39, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_comments.scss */
+.comments form.active_admin_comment fieldset.buttons {
+  padding: 0;
+  margin-top: 5px;
+}
+
+/* line 2, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_flash_messages.scss */
+body.logged_in .flash {
+  background-color: #f7f1d3;
+  background-image: linear-gradient(180deg, #f7f1d3, #f5edc5);
+  text-shadow: #fafafa 0 1px 0;
+  border-bottom: 1px solid #eee098;
+  color: #cb9810;
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 1.0em;
+  padding: 13px 30px 11px;
+  position: relative;
+}
+/* line 13, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_flash_messages.scss */
+body.logged_in .flash.flash_notice {
+  background-color: #dce9dd;
+  background-image: linear-gradient(180deg, #dce9dd, #ccdfcd);
+  border-bottom: 1px solid #adcbaf;
+  color: #416347;
+}
+/* line 18, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_flash_messages.scss */
+body.logged_in .flash.flash_error {
+  background-color: #f5e4e4;
+  background-image: linear-gradient(180deg, #f5e4e4, #f1dcdc);
+  border-bottom: 1px solid #e0c2c0;
+  color: #b33c33;
+}
+
+/* line 27, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_flash_messages.scss */
+body.logged_out .flash {
+  box-shadow: none;
+  text-shadow: #fff 0 1px 0;
+  background: none;
+  color: #666;
+  font-weight: bold;
+  line-height: 1.0em;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+/* line 2, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker {
+  background: #fff;
+  background-clip: padding-box;
+  color: #fff;
+  display: none;
+  margin-top: 2px;
+  padding: 0;
+  text-align: center;
+  width: 160px;
+}
+/* line 12, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker a {
+  text-decoration: none;
+}
+/* line 14, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker a:hover {
+  cursor: pointer;
+}
+/* line 19, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker .ui-datepicker-header {
+  height: 14px;
+  background-color: #6a7176;
+  background-image: linear-gradient(180deg, #6a7176, #4d5256);
+  border-bottom: 1px solid #44484b;
+  padding: 12px 5px 7px 4px;
+  margin: 0px 0px 2px 2px;
+  width: 147px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  position: relative;
+  z-index: 2000;
+}
+/* line 30, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker .ui-datepicker-header:before {
+  content: "";
+  position: absolute;
+  right: 45%;
+  top: -6px;
+  width: 0px;
+  height: 0px;
+  border-left: 8.5px solid transparent;
+  border-right: 8.5px solid transparent;
+  border-bottom: 10px solid #676e73;
+}
+/* line 42, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker .ui-datepicker-header .ui-datepicker-title {
+  text-shadow: #000 0 1px 0;
+  color: #fff;
+  display: block;
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 0.8em;
+  text-align: center;
+}
+/* line 51, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker .ui-datepicker-header .ui-datepicker-title .ui-datepicker-month {
+  margin: -4px 0 0 0;
+}
+/* line 54, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker .ui-datepicker-header .ui-datepicker-title .ui-datepicker-year {
+  margin: -4px 0 0 0;
+}
+/* line 60, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker .ui-datepicker-header a {
+  color: #fff;
+  display: block;
+  height: 19px;
+  margin-top: -4px;
+  width: 10px;
+}
+/* line 67, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-prev {
+  float: left;
+  width: 0;
+  height: 0;
+  margin: 0px 0px 0px 4px;
+  border-top: 5px solid transparent;
+  border-right: 5px solid white;
+  border-bottom: 5px solid transparent;
+}
+/* line 76, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-next {
+  float: right;
+  width: 0;
+  height: 0;
+  margin: 0px 4px 0px 0px;
+  border-top: 5px solid transparent;
+  border-left: 5px solid white;
+  border-bottom: 5px solid transparent;
+}
+/* line 86, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker .ui-datepicker-header a span {
+  display: none;
+}
+/* line 92, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar {
+  border-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.26);
+  background-color: #f4f4f4;
+  border: solid 1px #63686e;
+  left: 2px;
+  margin-bottom: 0px;
+  position: relative;
+  top: -2px;
+  width: 156px;
+}
+/* line 103, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar td, .ui-datepicker table.ui-datepicker-calendar th {
+  padding: 0px;
+  text-align: center;
+}
+/* line 108, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar thead th {
+  background-color: #dbdddf;
+  color: #333333;
+  font-weight: normal;
+  font-size: 0.8em;
+  padding-top: 1px;
+}
+/* line 116, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar tbody {
+  color: #666666;
+}
+/* line 119, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar tbody td {
+  border: none;
+  height: 24px;
+  width: 22px;
+}
+/* line 124, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar tbody td a {
+  border-radius: 3px;
+  color: #666666;
+  font-weight: bold;
+  font-size: 0.85em;
+  padding: 4px;
+}
+/* line 131, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar tbody td a.ui-state-active {
+  background-color: #5a5f64;
+  color: #fff;
+}
+/* line 134, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar tbody td a.ui-state-active.ui-state-hover {
+  background-color: #5a5f64;
+  color: #fff;
+}
+/* line 139, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar tbody td a.ui-state-hover {
+  background-color: #eceef0;
+}
+/* line 142, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_date_picker.scss */
+.ui-datepicker table.ui-datepicker-calendar tbody td a.ui-state-highlight {
+  background-color: #dbdddf;
+}
+
+/* line 5, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+table tr td {
+  vertical-align: top;
+}
+
+/* line 12, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 0;
+  border-spacing: 0;
+}
+/* line 18, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table th {
+  background-color: #efefef;
+  background-image: linear-gradient(180deg, #efefef, #dfe1e2);
+  text-shadow: #fff 0 1px 0;
+  border: solid 1px #cdcdcd;
+  border-color: #d4d4d4;
+  border-top-color: #e6e6e6;
+  border-right-color: #d4d4d4;
+  border-bottom-color: #cdcdcd;
+  border-left-color: #d4d4d4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px #FFF inset;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 0.5em;
+  color: #5E6469;
+  padding: 5px 10px 3px 10px;
+  border-right: none;
+  text-align: left;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+/* line 25, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table th a, table.index_table th a:link, table.index_table th a:visited {
+  color: #5E6469;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}
+/* line 32, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table th.sortable a {
+  background: url(/rails_assets/active_admin/orderable-29374dbb55b0012d78a37c614d573bb3474f0779849b478a147d0f1845ca6617.png) no-repeat 0 4px;
+  padding-left: 13px;
+}
+/* line 36, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table th.sorted-asc a {
+  background-position: 0 -27px;
+}
+/* line 37, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table th.sorted-desc a {
+  background-position: 0 -56px;
+}
+/* line 39, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table th.sorted-asc, table.index_table th.sorted-desc {
+  background-color: #e2e2e2;
+  background-image: linear-gradient(180deg, #e2e2e2, #d2d4d6);
+}
+/* line 43, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table th:last-child {
+  border-right: solid 1px #d4d4d4;
+}
+/* line 49, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table tr.even td {
+  background: #f4f5f5;
+}
+/* line 51, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table tr.selected td {
+  background: #d9e4ec;
+}
+/* line 55, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+table.index_table td {
+  padding: 10px 12px 8px 12px;
+  border-bottom: 1px solid #e8e8e8;
+  vertical-align: top;
+}
+
+/* line 64, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+.panel_contents table {
+  margin-top: 5px;
+}
+/* line 66, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+.panel_contents table th {
+  padding-top: 10px;
+  background: none;
+  color: #5E6469;
+  box-shadow: none;
+  text-shadow: #fff 0 1px 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+}
+/* line 75, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+.panel_contents table tr.odd td {
+  background: #ecedee;
+}
+/* line 76, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+.panel_contents table tr.even td {
+  background: #f4f5f5;
+}
+
+/* line 80, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+.attributes_table {
+  overflow: hidden;
+}
+
+/* line 83, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+.attributes_table table col.even {
+  background: #f4f5f5;
+}
+/* line 84, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+.attributes_table table col.odd {
+  background: #ecedee;
+}
+/* line 85, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+.attributes_table table th, .attributes_table table td {
+  padding: 8px 12px 6px 12px;
+  vertical-align: top;
+  border-bottom: 1px solid #e8e8e8;
+}
+/* line 90, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+.attributes_table table th {
+  box-shadow: none;
+  background-color: none;
+  width: 150px;
+  font-size: 0.9em;
+  padding-left: 0;
+  text-transform: uppercase;
+  color: #5E6469;
+  text-shadow: #fff 0 1px 0;
+}
+/* line 101, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+.attributes_table table td .empty {
+  color: #bbb;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+/* line 110, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tables.scss */
+.sidebar_section .attributes_table th {
+  width: 50px;
+}
+
+/* line 20, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/gems/bourbon-4.2.2/app/assets/stylesheets/addons/_clearfix.scss */
+#collection_selection_toggle_panel::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 3, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_batch_actions.scss */
+#collection_selection_toggle_panel > .resource_selection_toggle_cell {
+  float: left;
+}
+/* line 6, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_batch_actions.scss */
+#collection_selection_toggle_panel #collection_selection_toggle_explaination {
+  float: left;
+  margin-left: 5px;
+  font-style: italic;
+}
+
+/* line 1, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-widget-overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001;
+}
+
+/* line 8, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-dialog {
+  position: fixed;
+  z-index: 1002;
+  background: #f4f4f4;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 4px #ddd;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+}
+/* line 14, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-dialog .ui-dialog-titlebar {
+  background-color: #efefef;
+  background-image: linear-gradient(180deg, #efefef, #dfe1e2);
+  text-shadow: #fff 0 1px 0;
+  border: solid 1px #cdcdcd;
+  border-color: #d4d4d4;
+  border-top-color: #e6e6e6;
+  border-right-color: #d4d4d4;
+  border-bottom-color: #cdcdcd;
+  border-left-color: #d4d4d4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px #FFF inset;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 0.5em;
+  color: #5E6469;
+  padding: 5px 10px 3px 10px;
+}
+/* line 16, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-dialog .ui-dialog-titlebar span {
+  font-size: 1.1em;
+}
+/* line 19, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-dialog ul {
+  list-style-type: none;
+}
+/* line 20, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-dialog li {
+  margin: 10px 0;
+}
+/* line 21, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-dialog label {
+  margin-right: 10px;
+}
+/* line 23, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-dialog .ui-dialog-buttonpane, .ui-dialog form {
+  padding: 7px 15px 13px;
+}
+/* line 27, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-dialog .ui-dialog-buttonpane button {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #838a90;
+  background-image: linear-gradient(180deg, #838a90, #414549);
+  text-shadow: #000 0 1px 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0px rgba(255, 255, 255, 0.2) inset;
+  border: solid 1px #484e53;
+  border-color: #484e53;
+  border-top-color: #616a71;
+  border-right-color: #484e53;
+  border-bottom-color: #363b3f;
+  border-left-color: #484e53;
+  color: #efefef;
+}
+/* line 12, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.ui-dialog .ui-dialog-buttonpane button.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 29, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.ui-dialog .ui-dialog-buttonpane button:not(.disabled):hover {
+  background-color: #8b9297;
+  background-image: linear-gradient(180deg, #8b9297, #484d51);
+}
+/* line 33, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.ui-dialog .ui-dialog-buttonpane button:not(.disabled):active {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset, 0 1px 0 0px #FFF;
+  background-color: #71797f;
+  background-image: linear-gradient(180deg, #71797f, #35383b);
+}
+/* line 28, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.ui-dialog .ui-dialog-buttonpane button:last-child {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E7E7E7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+  border: solid 1px #c7c7c7;
+  border-color: #c7c7c7;
+  border-top-color: #d3d3d3;
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c2c2c2;
+  border-left-color: #c7c7c7;
+  text-shadow: #fff 0 1px 0;
+  color: #5E6469;
+}
+/* line 12, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.ui-dialog .ui-dialog-buttonpane button:last-child.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 50, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.ui-dialog .ui-dialog-buttonpane button:last-child:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F1F1F1);
+}
+/* line 54, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.ui-dialog .ui-dialog-buttonpane button:last-child:not(.disabled):active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #EEE;
+  border-color: #b9b9b9;
+  border-top-color: #c2c2c2;
+  border-right-color: #b9b9b9;
+  border-bottom-color: #b7b7b7;
+  border-left-color: #b9b9b9;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(180deg, #F3F3F3, #D8D8D8);
+}
+
+/* line 33, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_modal_dialog.scss */
+.active_admin_dialog.ui-dialog .ui-dialog-titlebar-close {
+  display: none;
+}
+
+/* line 1, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_blank_slates.scss */
+.blank_slate_container {
+  clear: both;
+  text-align: center;
+}
+/* line 5, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_blank_slates.scss */
+.blank_slate_container .blank_slate {
+  border-radius: 3px;
+  border: 1px dashed #DADADA;
+  color: #AAA;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 14px 25px;
+  text-align: center;
+}
+/* line 15, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_blank_slates.scss */
+.blank_slate_container .blank_slate small {
+  display: block;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+/* line 23, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_blank_slates.scss */
+.admin_dashboard .blank_slate_container .blank_slate {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* line 28, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_blank_slates.scss */
+.with_sidebar .blank_slate_container .blank_slate {
+  margin-top: 80px;
+}
+
+/* line 1, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_breadcrumbs.scss */
+.breadcrumb {
+  display: block;
+  font-size: 0.9em;
+  font-weight: normal;
+  line-height: 1.0em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+/* line 9, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_breadcrumbs.scss */
+.breadcrumb a, .breadcrumb a:link, .breadcrumb a:visited, .breadcrumb a:active {
+  color: #8a949e;
+  text-decoration: none;
+}
+/* line 14, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_breadcrumbs.scss */
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+/* line 16, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_breadcrumbs.scss */
+.breadcrumb .breadcrumb_sep {
+  margin: 0 2px;
+  color: #aab2ba;
+}
+
+/* line 1, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu {
+  display: inline;
+}
+/* line 4, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_button {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E7E7E7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+  border: solid 1px #c7c7c7;
+  border-color: #c7c7c7;
+  border-top-color: #d3d3d3;
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c2c2c2;
+  border-left-color: #c7c7c7;
+  text-shadow: #fff 0 1px 0;
+  color: #5E6469;
+  position: relative;
+  padding-right: 22px !important;
+  cursor: pointer;
+}
+/* line 12, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.dropdown_menu .dropdown_menu_button.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 50, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.dropdown_menu .dropdown_menu_button:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F1F1F1);
+}
+/* line 54, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.dropdown_menu .dropdown_menu_button:not(.disabled):active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #EEE;
+  border-color: #b9b9b9;
+  border-top-color: #c2c2c2;
+  border-right-color: #b9b9b9;
+  border-bottom-color: #b7b7b7;
+  border-left-color: #b9b9b9;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(180deg, #F3F3F3, #D8D8D8);
+}
+/* line 10, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_button:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 3px 3px 0;
+  border-style: solid;
+  border-color: #FFF transparent;
+  right: 12px;
+  top: 45%;
+}
+/* line 22, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_button:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 3px 3px 0;
+  border-style: solid;
+  border-color: #777 transparent;
+  right: 12px;
+  top: 45%;
+}
+/* line 35, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_nipple {
+  content: "";
+  position: absolute;
+  top: -6px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 0 6px 6px;
+  border-style: solid;
+  border-color: #545a5e transparent;
+  z-index: 100;
+}
+/* line 51, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_nipple:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 0 5px 5px;
+  border-style: solid;
+  border-color: #838a90 transparent;
+  left: -5px;
+  top: 1px;
+}
+/* line 65, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_nipple:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 0 5px 5px;
+  border-style: solid;
+  border-color: #686e74 transparent;
+  left: -5px;
+  top: 2px;
+}
+/* line 78, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_list_wrapper {
+  display: inline-block;
+  position: absolute;
+  background-color: white;
+  padding: 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, #838a90 0px 1px 0px 0px inset;
+  background-color: #5E6469;
+  background-color: #686e74;
+  background-image: linear-gradient(180deg, #686e74, #52575c);
+  border: solid 1px #464a4e;
+  border-top-color: #545a5e;
+  border-bottom-color: #35383b;
+  border-radius: 4px;
+  z-index: 2000;
+  display: none;
+}
+/* line 93, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_list_wrapper .dropdown_menu_list {
+  display: block;
+  background-color: #FFF;
+  border: solid 1px #464a4e;
+  box-shadow: #6a7176 0px 1px 0px 0px;
+  border-radius: 3px;
+  margin: 0;
+  overflow: hidden;
+  padding: 8px;
+  list-style-type: none;
+  padding: 0;
+}
+/* line 106, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_list_wrapper .dropdown_menu_list li {
+  display: block;
+  border-bottom: solid 1px #ebebeb;
+  box-sizing: border-box;
+}
+/* line 111, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_list_wrapper .dropdown_menu_list li a {
+  display: block;
+  box-sizing: padding-box;
+  font-size: 0.95em;
+  font-weight: bold;
+  padding: 7px 16px 5px;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+}
+/* line 121, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_list_wrapper .dropdown_menu_list li a:hover {
+  background-color: #75a1c2;
+  background-image: linear-gradient(180deg, #75a1c2, #608cb4);
+  text-shadow: #5a83aa 0 1px 0;
+  color: #FFF;
+}
+/* line 127, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_list_wrapper .dropdown_menu_list li a:active {
+  background-color: #608cb4;
+  background-image: linear-gradient(180deg, #608cb4, #75a1c2);
+  color: #FFF;
+}
+/* line 135, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_list_wrapper .dropdown_menu_list li:first-child a {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+/* line 142, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_list_wrapper .dropdown_menu_list li:last-child {
+  border: none;
+}
+/* line 143, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_dropdown_menu.scss */
+.dropdown_menu .dropdown_menu_list_wrapper .dropdown_menu_list li:last-child a {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+/* line 1, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_buttons.scss */
+a.member_link {
+  margin-right: 7px;
+  white-space: nowrap;
+}
+
+/* line 6, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_buttons.scss */
+a.button, a:link.button, a:visited.button, input[type=submit], input[type=button], button {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #838a90;
+  background-image: linear-gradient(180deg, #838a90, #414549);
+  text-shadow: #000 0 1px 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0px rgba(255, 255, 255, 0.2) inset;
+  border: solid 1px #484e53;
+  border-color: #484e53;
+  border-top-color: #616a71;
+  border-right-color: #484e53;
+  border-bottom-color: #363b3f;
+  border-left-color: #484e53;
+  color: #efefef;
+}
+/* line 12, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+a.button.disabled, a:link.button.disabled, a:visited.button.disabled, input[type=submit].disabled, input[type=button].disabled, button.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 29, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+a.button:not(.disabled):hover, a:link.button:not(.disabled):hover, a:visited.button:not(.disabled):hover, input[type=submit]:not(.disabled):hover, input[type=button]:not(.disabled):hover, button:not(.disabled):hover {
+  background-color: #8b9297;
+  background-image: linear-gradient(180deg, #8b9297, #484d51);
+}
+/* line 33, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+a.button:not(.disabled):active, a:link.button:not(.disabled):active, a:visited.button:not(.disabled):active, input[type=submit]:not(.disabled):active, input[type=button]:not(.disabled):active, button:not(.disabled):active {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset, 0 1px 0 0px #FFF;
+  background-color: #71797f;
+  background-image: linear-gradient(180deg, #71797f, #35383b);
+}
+
+/* line 2, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_grid.scss */
+table.index_grid td {
+  border: none;
+  background: none;
+  padding: 0 20px 20px 0;
+  margin: 0;
+}
+
+/* line 5, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_grid.scss */
+.columns {
+  clear: both;
+  padding: 0;
+}
+/* line 8, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_grid.scss */
+.columns .column {
+  float: left;
+}
+
+/* line 1, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_links.scss */
+a, a:link, a:visited {
+  color: #38678b;
+  text-decoration: underline;
+}
+
+/* line 5, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_links.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 1, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.paginated_collection_contents {
+  clear: both;
+}
+
+/* line 5, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.pagination {
+  float: right;
+  font-size: 0.9em;
+  margin-left: 10px;
+}
+/* line 10, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.pagination a {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E7E7E7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+  border: solid 1px #c7c7c7;
+  border-color: #c7c7c7;
+  border-top-color: #d3d3d3;
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c2c2c2;
+  border-left-color: #c7c7c7;
+  text-shadow: #fff 0 1px 0;
+  color: #5E6469;
+}
+/* line 12, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.pagination a.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 50, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.pagination a:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F1F1F1);
+}
+/* line 54, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.pagination a:not(.disabled):active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #EEE;
+  border-color: #b9b9b9;
+  border-top-color: #c2c2c2;
+  border-right-color: #b9b9b9;
+  border-bottom-color: #b7b7b7;
+  border-left-color: #b9b9b9;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(180deg, #F3F3F3, #D8D8D8);
+}
+/* line 14, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.pagination span.page.current {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #838a90;
+  background-image: linear-gradient(180deg, #838a90, #414549);
+  text-shadow: #000 0 1px 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0px rgba(255, 255, 255, 0.2) inset;
+  border: solid 1px #484e53;
+  border-color: #484e53;
+  border-top-color: #616a71;
+  border-right-color: #484e53;
+  border-bottom-color: #363b3f;
+  border-left-color: #484e53;
+  color: #efefef;
+}
+/* line 12, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.pagination span.page.current.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 29, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.pagination span.page.current:not(.disabled):hover {
+  background-color: #8b9297;
+  background-image: linear-gradient(180deg, #8b9297, #484d51);
+}
+/* line 33, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.pagination span.page.current:not(.disabled):active {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset, 0 1px 0 0px #FFF;
+  background-color: #71797f;
+  background-image: linear-gradient(180deg, #71797f, #35383b);
+}
+/* line 18, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.pagination a, .pagination span.page.current {
+  border-radius: 0px;
+  margin-right: 4px;
+  padding: 2px 5px;
+}
+
+/* line 25, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.pagination_information {
+  float: right;
+  margin-bottom: 5px;
+  color: #b3bcc1;
+}
+/* line 29, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.pagination_information b {
+  color: #5c6469;
+}
+
+/* line 32, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.download_links {
+  float: left;
+}
+
+/* line 36, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.pagination_per_page {
+  float: right;
+  margin-left: 4px;
+}
+/* line 39, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_pagination.scss */
+.pagination_per_page select {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E7E7E7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+  border: solid 1px #c7c7c7;
+  border-color: #c7c7c7;
+  border-top-color: #d3d3d3;
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c2c2c2;
+  border-left-color: #c7c7c7;
+  text-shadow: #fff 0 1px 0;
+  color: #5E6469;
+  border-radius: 0px;
+  padding: 1px 5px;
+}
+/* line 12, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.pagination_per_page select.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 50, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.pagination_per_page select:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F1F1F1);
+}
+/* line 54, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.pagination_per_page select:not(.disabled):active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #EEE;
+  border-color: #b9b9b9;
+  border-top-color: #c2c2c2;
+  border-right-color: #b9b9b9;
+  border-bottom-color: #b7b7b7;
+  border-left-color: #b9b9b9;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(180deg, #F3F3F3, #D8D8D8);
+}
+
+/* line 2, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_panels.scss */
+.section, .panel {
+  background: #f4f4f4;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 4px #ddd;
+  margin-bottom: 20px;
+}
+/* line 27, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_sections.scss */
+.section > h3, .panel > h3 {
+  background-color: #efefef;
+  background-image: linear-gradient(180deg, #efefef, #dfe1e2);
+  text-shadow: #fff 0 1px 0;
+  border: solid 1px #cdcdcd;
+  border-color: #d4d4d4;
+  border-top-color: #e6e6e6;
+  border-right-color: #d4d4d4;
+  border-bottom-color: #cdcdcd;
+  border-left-color: #d4d4d4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px #FFF inset;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 0.5em;
+  color: #5E6469;
+  padding: 5px 10px 3px 10px;
+}
+/* line 30, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_sections.scss */
+.section > h3 .header_action, .panel > h3 .header_action {
+  float: right;
+}
+/* line 35, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_sections.scss */
+.section > div, .panel > div {
+  padding: 3px 15px 15px 15px;
+}
+/* line 37, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_sections.scss */
+.section hr, .panel hr {
+  border: none;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+/* line 6, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_panels.scss */
+.sidebar_section {
+  background: #f4f4f4;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 4px #ddd;
+  margin-bottom: 20px;
+}
+/* line 27, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_sections.scss */
+.sidebar_section > h3 {
+  background-color: #efefef;
+  background-image: linear-gradient(180deg, #efefef, #dfe1e2);
+  text-shadow: #fff 0 1px 0;
+  border: solid 1px #cdcdcd;
+  border-color: #d4d4d4;
+  border-top-color: #e6e6e6;
+  border-right-color: #d4d4d4;
+  border-bottom-color: #cdcdcd;
+  border-left-color: #d4d4d4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px #FFF inset;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 0.5em;
+  color: #5E6469;
+  padding: 5px 10px 3px 10px;
+}
+/* line 30, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_sections.scss */
+.sidebar_section > h3 .header_action {
+  float: right;
+}
+/* line 35, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_sections.scss */
+.sidebar_section > div {
+  padding: 3px 15px 15px 15px;
+}
+/* line 37, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_sections.scss */
+.sidebar_section hr {
+  border: none;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+/* line 1, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_columns.scss */
+.columns {
+  margin-bottom: 10px;
+}
+
+/* line 3, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_scopes.scss */
+.scopes li .count {
+  color: #8e979e;
+  font-weight: normal;
+  font-size: 0.9em;
+  line-height: 10px;
+}
+
+/* line 1, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_status_tags.scss */
+.status_tag {
+  background: #cacaca;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 3px 5px 2px 5px;
+  font-size: 0.8em;
+}
+/* line 9, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_status_tags.scss */
+.status_tag.ok, .status_tag.published, .status_tag.complete, .status_tag.completed, .status_tag.green {
+  background: #8daa92;
+}
+/* line 10, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_status_tags.scss */
+.status_tag.warn, .status_tag.warning, .status_tag.orange {
+  background: #e29b20;
+}
+/* line 11, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_status_tags.scss */
+.status_tag.error, .status_tag.errored, .status_tag.red {
+  background: #d45f53;
+}
+/* line 13, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_status_tags.scss */
+.status_tag.yes {
+  background: #6090DB;
+}
+/* line 14, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_status_tags.scss */
+.status_tag.no {
+  background: grey;
+}
+
+/* line 1, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+.table_tools {
+  margin-bottom: 16px;
+}
+/* line 20, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/gems/bourbon-4.2.2/app/assets/stylesheets/addons/_clearfix.scss */
+.table_tools::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 6, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+.table_tools .dropdown_menu {
+  float: left;
+}
+
+/* line 10, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+a.table_tools_button, .table_tools .dropdown_menu_button {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E7E7E7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+  border: solid 1px #c7c7c7;
+  border-color: #c7c7c7;
+  border-top-color: #d3d3d3;
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c2c2c2;
+  border-left-color: #c7c7c7;
+  text-shadow: #fff 0 1px 0;
+  color: #5E6469;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F0F0F0);
+  border-color: #d0d0d0;
+  border-top-color: #d9d9d9;
+  border-right-color: #d0d0d0;
+  border-bottom-color: #c5c5c5;
+  border-left-color: #d0d0d0;
+  font-size: 0.9em;
+  padding: 4px 14px 4px;
+  margin: 0;
+}
+/* line 12, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+a.table_tools_button.disabled, .table_tools .dropdown_menu_button.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 50, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+a.table_tools_button:not(.disabled):hover, .table_tools .dropdown_menu_button:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F1F1F1);
+}
+/* line 54, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+a.table_tools_button:not(.disabled):active, .table_tools .dropdown_menu_button:not(.disabled):active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #EEE;
+  border-color: #b9b9b9;
+  border-top-color: #c2c2c2;
+  border-right-color: #b9b9b9;
+  border-bottom-color: #b7b7b7;
+  border-left-color: #b9b9b9;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(180deg, #F3F3F3, #D8D8D8);
+}
+/* line 19, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+a.table_tools_button:not(.disabled):hover, .table_tools .dropdown_menu_button:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F6F6F6);
+}
+/* line 23, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+a.table_tools_button:not(.disabled):active, .table_tools .dropdown_menu_button:not(.disabled):active {
+  border-color: #c8c8c8;
+  border-top-color: #d7d7d7;
+  border-right-color: #c8c8c8;
+  border-bottom-color: #c3c3c3;
+  border-left-color: #c8c8c8;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.17) inset;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E8E8E8);
+}
+
+/* line 31, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+.table_tools_segmented_control {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 36, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+.table_tools_segmented_control li {
+  float: left;
+}
+/* line 39, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+.table_tools_segmented_control li a {
+  border-width: 1px .5px 1px .5px;
+  border-radius: 0;
+}
+/* line 44, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+.table_tools_segmented_control li:first-child a {
+  border-left-width: 1px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+/* line 50, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+.table_tools_segmented_control li:last-child a {
+  border-right-width: 1px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+/* line 56, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+.table_tools_segmented_control li.selected a {
+  background-color: #F0F0F0;
+  background-image: linear-gradient(180deg, #F0F0F0, #FDFDFD);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1) inset;
+  cursor: default;
+}
+/* line 61, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_table_tools.scss */
+.table_tools_segmented_control li.selected a:hover {
+  background-color: #F0F0F0;
+  background-image: linear-gradient(180deg, #F0F0F0, #FDFDFD);
+}
+
+/* line 1, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_index_list.scss */
+.indexes {
+  float: right;
+}
+/* line 5, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_index_list.scss */
+.indexes li .count {
+  color: #8e979e;
+  font-weight: normal;
+  font-size: 0.9em;
+  line-height: 10px;
+}
+
+/* line 1, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_unsupported_browser.scss */
+.unsupported_browser {
+  padding: 10px 30px;
+  color: #211e14;
+  background-color: #fae692;
+  background-color: #feefae;
+  background-image: linear-gradient(180deg, #feefae, #fae692);
+  border-bottom: 1px solid #b3a569;
+}
+/* line 8, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_unsupported_browser.scss */
+.unsupported_browser h1 {
+  font-size: 13px;
+  font-weight: bold;
+}
+/* line 13, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_unsupported_browser.scss */
+.unsupported_browser p {
+  margin-bottom: 0.5em;
+}
+
+/* line 1, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tabs.scss */
+.ui-tabs-nav {
+  list-style: none;
+  display: block;
+  width: auto;
+  margin-bottom: -12px;
+  padding-left: 0;
+  overflow: auto;
+  margin-left: 15px;
+}
+/* line 10, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tabs.scss */
+.ui-tabs-nav li {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+/* line 17, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tabs.scss */
+.ui-tabs-nav li:first-child a {
+  border-left-width: 1px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+/* line 23, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tabs.scss */
+.ui-tabs-nav li:last-child a {
+  border-right-width: 1px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+/* line 29, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tabs.scss */
+.ui-tabs-nav li a {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E7E7E7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+  border: solid 1px #c7c7c7;
+  border-color: #c7c7c7;
+  border-top-color: #d3d3d3;
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c2c2c2;
+  border-left-color: #c7c7c7;
+  text-shadow: #fff 0 1px 0;
+  color: #5E6469;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F0F0F0);
+  border-color: #d0d0d0;
+  border-top-color: #d9d9d9;
+  border-right-color: #d0d0d0;
+  border-bottom-color: #c5c5c5;
+  border-left-color: #d0d0d0;
+  text-decoration: none;
+  border-radius: 0;
+  border-width: 1px .5px 1px .5px;
+  margin-right: 0;
+  padding: 4px 14px 4px;
+}
+/* line 12, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.ui-tabs-nav li a.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 50, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.ui-tabs-nav li a:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F1F1F1);
+}
+/* line 54, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+.ui-tabs-nav li a:not(.disabled):active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #EEE;
+  border-color: #b9b9b9;
+  border-top-color: #c2c2c2;
+  border-right-color: #b9b9b9;
+  border-bottom-color: #b7b7b7;
+  border-left-color: #b9b9b9;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(180deg, #F3F3F3, #D8D8D8);
+}
+/* line 40, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tabs.scss */
+.ui-tabs-nav li a:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F6F6F6);
+}
+/* line 47, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tabs.scss */
+.ui-tabs-nav li.ui-tabs-active a {
+  cursor: default;
+  background-color: #F0F0F0;
+  background-image: linear-gradient(180deg, #F0F0F0, #FDFDFD);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1) inset;
+}
+/* line 52, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tabs.scss */
+.ui-tabs-nav li.ui-tabs-active a a:hover {
+  background-color: #F0F0F0;
+  background-image: linear-gradient(180deg, #F0F0F0, #FDFDFD);
+}
+
+/* line 60, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/components/_tabs.scss */
+.tab-content {
+  border: 1px solid #D3D3D3;
+  padding: 15px;
+  padding-top: 30px;
+  text-align: left;
+}
+
+/* line 1, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out {
+  background: #e8e9ea;
+}
+/* line 4, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out #content_wrapper {
+  width: 500px;
+  margin: 70px auto;
+}
+/* line 7, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out #content_wrapper #active_admin_content {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+  background: #fff;
+  padding: 13px 30px;
+}
+/* line 14, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out h2 {
+  background-color: #efefef;
+  background-image: linear-gradient(180deg, #efefef, #dfe1e2);
+  text-shadow: #fff 0 1px 0;
+  border: solid 1px #cdcdcd;
+  border-color: #d4d4d4;
+  border-top-color: #e6e6e6;
+  border-right-color: #d4d4d4;
+  border-bottom-color: #cdcdcd;
+  border-left-color: #d4d4d4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px #FFF inset;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 0.5em;
+  color: #5E6469;
+  padding: 5px 10px 3px 10px;
+  background-color: #6a7176;
+  background-image: linear-gradient(180deg, #6a7176, #4d5256);
+  border-bottom: 1px solid #44484b;
+  text-shadow: #000 0 1px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  border: none;
+  color: #fff;
+  margin: -13px -30px 20px -30px;
+}
+/* line 24, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out #login {
+  /* Login Form */
+}
+/* line 27, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out #login form fieldset {
+  box-shadow: none;
+  background: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+/* line 31, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out #login form fieldset li {
+  padding: 10px 0;
+}
+/* line 33, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out #login form fieldset input[type=text], body.logged_out #login form fieldset input[type=email], body.logged_out #login form fieldset input[type=password] {
+  width: 70%;
+}
+/* line 36, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out #login form fieldset.buttons {
+  margin-left: 20%;
+}
+/* line 41, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/pages/_logged_out.scss */
+body.logged_out #login a {
+  float: right;
+  margin-top: -32px;
+}
+
+/* line 1, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/structure/_footer.scss */
+#footer {
+  padding: 30px 30px;
+  font-size: 0.8em;
+  clear: both;
+}
+/* line 6, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/structure/_footer.scss */
+#footer p {
+  padding-top: 10px;
+}
+
+/* line 12, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/structure/_footer.scss */
+#index_footer {
+  padding-top: 5px;
+  text-align: right;
+  font-size: 0.85em;
+}
+
+/* line 14, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/structure/_footer.scss */
+.index_content {
+  clear: both;
+}
+
+/* line 1, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/structure/_main_structure.scss */
+#wrapper {
+  width: 100%;
+}
+
+/* line 5, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/structure/_main_structure.scss */
+.index #wrapper {
+  display: table;
+}
+
+/* line 9, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/structure/_main_structure.scss */
+#active_admin_content {
+  margin: 0;
+  padding: 30px;
+}
+/* line 13, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/structure/_main_structure.scss */
+#active_admin_content #main_content_wrapper {
+  float: left;
+  width: 100%;
+}
+/* line 17, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/structure/_main_structure.scss */
+#active_admin_content #main_content_wrapper #main_content {
+  margin-right: 300px;
+}
+/* line 22, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/structure/_main_structure.scss */
+#active_admin_content.without_sidebar #main_content_wrapper #main_content {
+  margin-right: 0;
+}
+/* line 24, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/structure/_main_structure.scss */
+#active_admin_content #sidebar {
+  float: left;
+  width: 270px;
+  margin-left: -270px;
+}
+
+/* line 1, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/structure/_title_bar.scss */
+#title_bar {
+  background-color: #efefef;
+  background-image: linear-gradient(180deg, #efefef, #dfe1e2);
+  text-shadow: #fff 0 1px 0;
+  border: solid 1px #cdcdcd;
+  border-color: #d4d4d4;
+  border-top-color: #e6e6e6;
+  border-right-color: #d4d4d4;
+  border-bottom-color: #cdcdcd;
+  border-left-color: #d4d4d4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px #FFF inset;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 0.5em;
+  color: #5E6469;
+  padding: 5px 10px 3px 10px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+  display: table;
+  border-bottom-color: #EEE;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 10px 30px;
+  z-index: 800;
+}
+/* line 20, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/gems/bourbon-4.2.2/app/assets/stylesheets/addons/_clearfix.scss */
+#title_bar::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 14, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/structure/_title_bar.scss */
+#title_bar #titlebar_left, #title_bar #titlebar_right {
+  height: 50px;
+  vertical-align: middle;
+  display: table-cell;
+}
+/* line 20, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/structure/_title_bar.scss */
+#title_bar #titlebar_right {
+  text-align: right;
+}
+/* line 24, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/structure/_title_bar.scss */
+#title_bar h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.6em;
+  line-height: 100%;
+  font-weight: bold;
+}
+/* line 34, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/structure/_title_bar.scss */
+#title_bar .action_items span.action_item > a, #title_bar .action_items span.action_item > .dropdown_menu > a {
+  border-radius: 200px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.0em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 12px;
+  margin-right: 3px;
+  padding: 7px 16px 6px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #E7E7E7);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+  border: solid 1px #c7c7c7;
+  border-color: #c7c7c7;
+  border-top-color: #d3d3d3;
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c2c2c2;
+  border-left-color: #c7c7c7;
+  text-shadow: #fff 0 1px 0;
+  color: #5E6469;
+  padding: 12px 17px 10px;
+  margin: 0px;
+}
+/* line 12, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+#title_bar .action_items span.action_item > a.disabled, #title_bar .action_items span.action_item > .dropdown_menu > a.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* line 50, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+#title_bar .action_items span.action_item > a:not(.disabled):hover, #title_bar .action_items span.action_item > .dropdown_menu > a:not(.disabled):hover {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF, #F1F1F1);
+}
+/* line 54, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/mixins/_buttons.scss */
+#title_bar .action_items span.action_item > a:not(.disabled):active, #title_bar .action_items span.action_item > .dropdown_menu > a:not(.disabled):active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #EEE;
+  border-color: #b9b9b9;
+  border-top-color: #c2c2c2;
+  border-right-color: #b9b9b9;
+  border-bottom-color: #b7b7b7;
+  border-left-color: #b9b9b9;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(180deg, #F3F3F3, #D8D8D8);
+}
+
+/* line 35, /var/www/stroygarant.moscow/shared/bundle/ruby/2.3.0/bundler/gems/activeadmin-8968efcc51cc/app/assets/stylesheets/active_admin/_base.scss */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 72%;
+  background: #FFF;
+  color: #323537;
+}
+
+/* line 21, /home/alina/src/stroygarant.moscow/releases/20150618111712/app/assets/stylesheets/active_admin.css.scss */
+img[alt=Missing] {
+  display: none;
+}
