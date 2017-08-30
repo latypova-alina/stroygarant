@@ -21,6 +21,7 @@ gem 'paperclip', '~> 4.2'
 gem 'activeadmin-settings', github: 'slate-studio/activeadmin-settings'
 gem 'carrierwave'
 gem 'rack-cors', :require => 'rack/cors'
+gem 'therubyracer'
 
 group :development, :test do
   gem 'byebug'
