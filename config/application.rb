@@ -29,7 +29,6 @@ module Stroygarant
     config.i18n.default_locale = :ru
     config.i18n.available_locales = [:ru]
 
-    config.assets.prefix = "/rails_assets"
     config.assets.compile = true
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
