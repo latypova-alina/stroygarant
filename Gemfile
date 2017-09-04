@@ -8,7 +8,6 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'bcrypt', '~> 3.1.7'
-gem 'capistrano-rails', group: :development
 gem 'devise'
 gem 'devise-i18n'
 gem 'activeadmin'
