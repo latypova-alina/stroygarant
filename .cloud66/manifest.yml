@@ -1,9 +1,4 @@
 production:
-    rails:
-        configuration:
-            asset_pipeline_precompile: true
-deployment:
-    rails:
-        configuration:
-            asset_pipeline_precompile: true
-
+  rails:
+    configuration:
+      asset_pipeline_precompile: true
